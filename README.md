@@ -3,6 +3,7 @@
 ## Async Link
 
 ```
+<!-- inline styles needed for Optimal CRUX scores -->
 <style>
   /* TODO: nav */
   /* TODO: #main */
@@ -10,8 +11,10 @@
   /* TODO: .above-the-fold-elements */
 </style>
 
-<!-- load main font via async link pattern -->
+<!-- Simple: load main font via async link pattern -->
 <link rel="stylesheet" href="/css/optional-and-additional.css" media="print" onload="this.media='all'">
+
+<!-- More Advanced: https://www.digitalocean.com/community/tutorials/html-preload-prefetch -->
 ```
 
 ## Async Font
