@@ -37,3 +37,11 @@
 }
 </style>
 ```
+
+## img[loading="lazy"]
+
+TLDR add `loading="lazy"` to every img and rip out all your img lazyloading js/plugins.
+
+CanIUse: https://caniuse.com/loading-lazy-attr
+
+Shopify `image_tag`: https://mikefallows.com/posts/responsive-images-in-shopify-themes/#the-new-image_tag-filter
