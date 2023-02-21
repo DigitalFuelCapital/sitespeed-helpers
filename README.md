@@ -2,7 +2,7 @@
 
 ## Async Link
 
-```
+```html
 <!-- inline styles needed for Optimal CRUX scores -->
 <style>
   /* TODO: nav */
@@ -19,7 +19,7 @@
 
 ## Async Font
 
-```
+```html
 <!-- load main font via async link pattern -->
 <link rel="stylesheet" href="/csss/fontello.css" media="print" onload="this.media='all'">
 
