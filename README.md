@@ -22,7 +22,7 @@
 
 ## Async Font
 
-Ideal State. Load font-face + woff2 ref as inline style:
+Ideal State. Load font-face + woff2 ref as inline style with `font-display: swap;`:
 
 ```html
 <!-- PREFERRED:  -->
