@@ -11,10 +11,13 @@
   /* TODO: .above-the-fold-elements */
 </style>
 
-<!-- Simple: load main font via async link pattern -->
+<!-- Simple: load main font via async link pattern (media=print doesn't block) -->
 <link rel="stylesheet" href="/css/optional-and-additional.css" media="print" onload="this.media='all'">
 
-<!-- More Advanced: https://www.digitalocean.com/community/tutorials/html-preload-prefetch -->
+<!-- 
+  Other CSS Pattern explanation & notes: 
+  https://www.digitalocean.com/community/tutorials/html-preload-prefetch 
+-->
 ```
 
 ## Async Font
