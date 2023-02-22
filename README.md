@@ -22,14 +22,10 @@
 
 ## Async Font
 
+Ideal State. Load font-face + woff2 ref as inline style:
+
 ```html
-<!-- load main font via async link pattern -->
-<link rel="stylesheet" href="/csss/fontello.css" media="print" onload="this.media='all'">
-
-<!-- preload woff2 b/c most browsers -->
-<link rel="preload" href="/fonts/fontello.woff2?98303082" as="font" type="font/woff2" crossorigin>
-
-<!-- cp + load face declaration inline as well (optional) -->
+<!-- PREFERRED:  -->
 <style>
 @font-face {
   font-display: swap;
@@ -39,6 +35,17 @@
   font-style: normal;
 }
 </style>
+<!-- also preload woff2 -->
+<link rel="preload" href="/fonts/fontello.woff2?98303082" as="font" type="font/woff2" crossorigin>
+```
+
+Less Ideal but also a refactor option based on hosting / tech stack: 
+
+```html
+<!-- load font via async link pattern -->
+<link rel="stylesheet" href="/css/fontello.css" media="print" onload="this.media='all'">
+<!-- also preload woff2 -->
+<link rel="preload" href="/fonts/fontello.woff2?98303082" as="font" type="font/woff2" crossorigin>
 ```
 
 ## img[loading="lazy"]
