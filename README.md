@@ -11,7 +11,7 @@
   /* TODO: .above-the-fold-elements */
 </style>
 
-<!-- Simple: load main font via async link pattern (media=print doesn't block) -->
+<!-- Simple: load main css via async link pattern (media=print doesn't block) -->
 <link rel="stylesheet" href="/css/optional-and-additional.css" media="print" onload="this.media='all'">
 
 <!-- 
@@ -42,7 +42,7 @@ Ideal State. Load font-face + woff2 ref as inline style with `font-display: swap
 Less Ideal but also a refactor option based on hosting / tech stack: 
 
 ```html
-<!-- load font via async link pattern -->
+<!-- load main font via async link pattern (media=print doesn't block) -->
 <link rel="stylesheet" href="/css/fontello.css" media="print" onload="this.media='all'">
 
 <!-- also preload woff2 -->
