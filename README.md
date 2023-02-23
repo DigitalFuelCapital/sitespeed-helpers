@@ -59,3 +59,7 @@ TLDR add `loading="lazy"` to every img and rip out all your img lazyloading js/p
 CanIUse: https://caniuse.com/loading-lazy-attr
 
 Shopify `image_tag`: https://mikefallows.com/posts/responsive-images-in-shopify-themes/#the-new-image_tag-filter
+
+## Error Monitoring
+
+https://cdn.catchjs.com/catch.js
