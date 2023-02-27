@@ -56,9 +56,22 @@ Less Ideal but also a refactor option based on hosting / tech stack:
 
 TLDR add `loading="lazy"` to every img and rip out all your img lazyloading js/plugins.
 
+```html
+<!-- This is above the fold so no lazy -->
+<img src="/home-hero.jpg" alt="Shop Brand" />
+
+<!-- this is below so yes lazy -->
+<img src="footer/social-icon-facebook.jpg" alt="facebook" loading="lazy"/>
+<img src="footer/social-icon-twitter.jpg" alt="twitter" loading="lazy"/>
+<img src="footer/social-icon-pinterest.jpg" alt="pinterest" loading="lazy"/>
+```
+
 CanIUse: https://caniuse.com/loading-lazy-attr
 
-Shopify `image_tag`: https://mikefallows.com/posts/responsive-images-in-shopify-themes/#the-new-image_tag-filter
+```liquid
+// Shopify `image_tag`: https://mikefallows.com/posts/responsive-images-in-shopify-themes/#the-new-image_tag-filter
+{{ settings.banner | image_url: width: 2000 | image_tag: loading: "lazy" }}
+```
 
 ## Error Monitoring
 
