@@ -56,6 +56,17 @@ Less Ideal but also a refactor option based on hosting / tech stack:
 
 TLDR add `loading="lazy"` to every img and rip out all your img lazyloading js/plugins.
 
+CanIUse: https://caniuse.com/loading-lazy-attr
+
+Shopify Example ([docs](https://mikefallows.com/posts/responsive-images-in-shopify-themes/#the-new-image_tag-filter))
+
+```liquid
+<!-- Shopify Responsive `image_tag` -->
+{{ settings.banner | image_url: width: 2000 | image_tag: loading: "lazy" }}
+```
+
+HTML Examples:
+
 ```html
 <!-- This is above the fold so no lazy -->
 <img src="/home-hero.jpg" alt="Shop Brand" />
@@ -94,13 +105,6 @@ loading so <picture> and srcset fall off of that -->
 
 <!-- Lazy-load an offscreen iframe when the user scrolls near it -->
 <iframe src="video-player.html" loading="lazy"></iframe>
-```
-
-CanIUse: https://caniuse.com/loading-lazy-attr
-
-```liquid
-// Shopify `image_tag`: https://mikefallows.com/posts/responsive-images-in-shopify-themes/#the-new-image_tag-filter
-{{ settings.banner | image_url: width: 2000 | image_tag: loading: "lazy" }}
 ```
 
 ## Error Monitoring
