@@ -110,3 +110,7 @@ loading so <picture> and srcset fall off of that -->
 ## Error Monitoring
 
 https://cdn.catchjs.com/catch.js
+
+## Head Structure
+
+https://github.com/rviscomi/capo.js
