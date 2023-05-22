@@ -113,4 +113,5 @@ https://cdn.catchjs.com/catch.js
 
 ## Head Structure
 
-https://github.com/rviscomi/capo.js
+- https://twitter.com/rick_viscomi/status/1659612358795313190
+- https://github.com/rviscomi/capo.js
